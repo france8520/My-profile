@@ -1,0 +1,8 @@
+.li{
+    font-weight: normal;
+}
+.container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
