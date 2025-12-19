@@ -72,3 +72,23 @@ video{
 img{
     padding-top: 100px;
 }
+
+.card {
+  width: 250px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  
+}
+
+.card:hover img {
+  transform: rotateX(10deg) rotateY(-10deg) scale(1.05);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}

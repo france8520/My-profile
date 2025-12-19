@@ -3,25 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="style.css">
+    <title>France profile</title>
 </head>
-<body>
-    <h1 class="white-text">Skill</h1>
-<h2 class="white-text">Computer language:</h2>
-    <ul class="white-text">
-    <li>Python:Expert</li>
-    <li>JavaScript:Intermediate</li>
-    </ul>
-<h2 class="white-text">Framework:</h2>
-    <ul class="white-text">
-        <li>React:Beginner</li>
-        <li>Node.js:Beginner</li>
-    </ul>
-<h2 class="white-text">h2velopment tool:</h2>
-    <ul class="white-text">
-        <li>Vercel</li>
-        <li>Netlify</li>
-        <li>Render</li>
-    </ul>
+<body class="container" >
+    <video src="25164-348110782_small.mp4" autoplay muted loop></video>
+    <header class="header">
+        <a href="index.html" class="logo">My profile</a>
+        <nav class="navbar" >
+            <a href="skill.html">skill</a>
+            <a href="project.html">project exprience</a>
+            <a href="contact.html">contact</a>
+            <a href="education.html">education</a>
+     	</nav>
+    </header>
+ 
+    <div class="slider">
+
+        <input type="radio" name="card" id="c-1">
+        <input type="radio" name="card" id="c-2">
+        <input type="radio" name="card" id="c-3" checked>
+        <input type="radio" name="card" id="c-4">
+        <input type="radio" name="card" id="c-5">
+
+
+        <div class="cards">
+
+            <label for="c-1" class="item">
+                <div class="main_content">
+                    <div class="img">
+                        <img src="python-logo.png" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h1>Python</h1><br>
+                        <h4>Level:Intermediate</h4>
+                        
+                    </div>
+                </div>
+            </label>
+
+            <label for="c-2" class="item">
+                <div class="main_content">
+                    <div class="img">
+                        <img src="./image/pic2.jpg" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h1>JavaScript</h1><br>
+                        <h4>Level:Beginner</h4>
+                        
+                    </div>
+                </div>
+            </label>
+
+            <label for="c-3" class="item">
+                <div class="main_content">
+                    <div class="img">
+                        <img src="./image/pic3.avif" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h1>React</h1><br>
+                        <h4>Level:Beginner</h4>
+                    </div>
+                </div>
+            </label>
+
+            <label for="c-4" class="item">
+                <div class="main_content">
+                    <div class="img">
+                        <img src="./image/pic4.avif" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h1>Node.js</h1><br>
+                        <h4>Level:Beginner</h4>
+                    </div>
+                </div>
+            </label>
+
+            <label for="c-5" class="item">
+                <div class="main_content">
+                    <div class="img">
+                        <img src="./image/pic5.avif" alt="">
+                    </div>
+
+                    <div class="content">
+                        <h1>Next.js</h1><br>
+                        <h4>Level:Beginner</h4>
+                    </div>
+                </div>
+            </label>
+
+        </div>
+
+        <div class="dots">
+            <label for="c-1"></label>
+            <label for="c-2"></label>
+            <label for="c-3"></label>
+            <label for="c-4"></label>
+            <label for="c-5"></label>
+        </div>
+
+    </div>
 </body>
 </html>
