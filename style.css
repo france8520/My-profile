@@ -70,7 +70,7 @@ video{
     z-index: -1;
 }
 img{
-    padding-top: 100px;
+    margin-top: 100px;
 }
 
 .card {
@@ -88,7 +88,7 @@ img{
   
 }
 
-.card:hover img {
+.card img:hover {
   transform: rotateX(10deg) rotateY(-10deg) scale(1.05);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
 }
