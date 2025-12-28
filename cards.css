@@ -8,7 +8,8 @@ body{
 }
 
 .slider{
-    width: 10%;
+    width: 100%;
+    margin-top: 150px;
 }
 
 .slider input{
@@ -205,4 +206,172 @@ body{
 .button:hover{
     z-index: 0;
     box-shadow: 5px 0 15px #e25822, -5px 0 15px #000;
+}
+
+.button{
+    padding: 1em 2em;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #161a20;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 1000px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #e25822, #e25822);
+    z-index: -1;
+}
+
+.button:hover{
+    z-index: 0;
+    box-shadow: 5px 0 15px #e25822, -5px 0 15px #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slider {
+    margin-top: 120px;
+  }
+
+  .cards {
+    min-height: 280px;
+  }
+
+  .dots {
+    margin-top: 60px;
+  }
+
+  .cards .item {
+    width: 220px;
+    height: 330px;
+  }
+
+  .cards .item .main_content .content h1 {
+    font-size: 26px;
+  }
+
+  .cards .item .main_content .content h4 {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 0.8em 1.5em;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Adjust transforms for medium cards */
+  #c-1:checked ~ .cards label[for="c-3"],
+  #c-2:checked ~ .cards label[for="c-4"],
+  #c-3:checked ~ .cards label[for="c-5"],
+  #c-4:checked ~ .cards label[for="c-1"],
+  #c-5:checked ~ .cards label[for="c-2"] {
+    transform: translate3d(440px, 0, -180px) rotateY(-25deg);
+  }
+
+  #c-1:checked ~ .cards label[for="c-2"],
+  #c-2:checked ~ .cards label[for="c-3"],
+  #c-3:checked ~ .cards label[for="c-4"],
+  #c-4:checked ~ .cards label[for="c-5"],
+  #c-5:checked ~ .cards label[for="c-1"] {
+    transform: translate3d(220px, 0, -90px) rotateY(-15deg);
+  }
+
+  #c-2:checked ~ .cards label[for="c-1"],
+  #c-3:checked ~ .cards label[for="c-2"],
+  #c-4:checked ~ .cards label[for="c-3"],
+  #c-5:checked ~ .cards label[for="c-4"],
+  #c-1:checked ~ .cards label[for="c-5"] {
+    transform: translate3d(-220px, 0, -90px) rotateY(15deg);
+  }
+
+  #c-3:checked ~ .cards label[for="c-1"],
+  #c-4:checked ~ .cards label[for="c-2"],
+  #c-5:checked ~ .cards label[for="c-3"],
+  #c-2:checked ~ .cards label[for="c-5"],
+  #c-1:checked ~ .cards label[for="c-4"] {
+    transform: translate3d(-440px, 0, -180px) rotateY(25deg);
+  }
+}
+
+@media (max-width: 600px) {
+  .slider {
+    margin-top: 100px;
+  }
+
+  .cards {
+    min-height: 250px;
+  }
+
+  .dots {
+    margin-top: 60px;
+  }
+
+  .cards .item {
+    width: 200px;
+    height: 300px;
+  }
+
+  .cards .item .main_content .content h1 {
+    font-size: 24px;
+  }
+
+  .cards .item .main_content .content h4 {
+    font-size: 12px;
+  }
+
+  .button {
+    padding: 0.6em 1.2em;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  /* Adjust transforms for smaller cards */
+  #c-1:checked ~ .cards label[for="c-3"],
+  #c-2:checked ~ .cards label[for="c-4"],
+  #c-3:checked ~ .cards label[for="c-5"],
+  #c-4:checked ~ .cards label[for="c-1"],
+  #c-5:checked ~ .cards label[for="c-2"] {
+    transform: translate3d(400px, 0, -180px) rotateY(-25deg);
+  }
+
+  #c-1:checked ~ .cards label[for="c-2"],
+  #c-2:checked ~ .cards label[for="c-3"],
+  #c-3:checked ~ .cards label[for="c-4"],
+  #c-4:checked ~ .cards label[for="c-5"],
+  #c-5:checked ~ .cards label[for="c-1"] {
+    transform: translate3d(200px, 0, -90px) rotateY(-15deg);
+  }
+
+  #c-2:checked ~ .cards label[for="c-1"],
+  #c-3:checked ~ .cards label[for="c-2"],
+  #c-4:checked ~ .cards label[for="c-3"],
+  #c-5:checked ~ .cards label[for="c-4"],
+  #c-1:checked ~ .cards label[for="c-5"] {
+    transform: translate3d(-200px, 0, -90px) rotateY(15deg);
+  }
+
+  #c-3:checked ~ .cards label[for="c-1"],
+  #c-4:checked ~ .cards label[for="c-2"],
+  #c-5:checked ~ .cards label[for="c-3"],
+  #c-2:checked ~ .cards label[for="c-5"],
+  #c-1:checked ~ .cards label[for="c-4"] {
+    transform: translate3d(-400px, 0, -180px) rotateY(25deg);
+  }
 }
